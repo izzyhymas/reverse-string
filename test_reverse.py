@@ -3,7 +3,6 @@ from reverse_string import reverse
 
 
 # Testing our Reverse Function
-
-@pytest.fixture
-def test_reverse(a: str):
-    assert reverse(a == "elloH")
+def test_reverse():
+    a = reverse("Hello")
+    assert a == "olleH"
